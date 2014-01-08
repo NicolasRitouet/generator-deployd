@@ -23,6 +23,7 @@ dpd -d
 ```
 
 ## Todo
+- Add more tests
 - integrate Grunt to launch the server using [grunt-deployd](https://github.com/taras/grunt-deployd)
 - Improve angularjs integration (angular template more complete)
 - integrate bootstrap 3
