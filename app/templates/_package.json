@@ -1,0 +1,13 @@
+{
+  "name": "<%= _.slugify(appname) %>",
+  "version": "0.0.1",
+  "dependencies": {
+    "deployd": "~0.6.10"
+    },
+  "engines": {
+    "node": ">=0.8.0"
+  },
+  "scripts": {
+    "start": "node node_modules/deployd/bin/dpd"
+  }
+}
