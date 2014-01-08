@@ -19,3 +19,9 @@ $ yo deployd
 ```
 dpd -d
 ```
+
+## Todo
+- integrate Grunt to launch the server using [grunt-deployd](https://github.com/taras/grunt-deployd)
+- integrate angularjs
+- integrate bootstrap 3
+- create grunt tasks for live reloading, jshint, build, etc...

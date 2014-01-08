@@ -40,7 +40,7 @@ DeploydGenerator.prototype.askFor = function askFor() {
   } ];
 
   this.prompt(prompts, function (props) {
-    this.someOption = props.someOption;
+    this.angular = props.angular;
 
     cb();
   }.bind(this));
@@ -52,19 +52,22 @@ DeploydGenerator.prototype.createFolders = function createFolders() {
   this.mkdir('resources');
   this.mkdir('.dpd');
   this.mkdir('.dpd/pids');
-  this.copy('.dpd/pids/mongod', 'mongod');
+  this.copy('mongod', '.dpd/pids/mongod');
   this.copy('app.dpd', 'app.dpd');
 };
 
 DeploydGenerator.prototype.projectfiles = function projectfiles() {
   this.template('_README.md', 'README.md');
-  this.template('_Gruntfile.js', 'Gruntfile.js');
+  //this.template('_Gruntfile.js', 'Gruntfile.js');
   this.template('_package.json', 'package.json');
   this.copy('_bower.json', 'bower.json');
+  this.copy('bowerrc', '.bowerrc');
   this.copy('gitignore', '.gitignore');
 };
 
 DeploydGenerator.prototype.includeAngular = function includeAngular() {
-    if (!angular) return;
-    this.mkdir('public/app');
+    console.log(this.angular);
+    if (this.angular) {
+        this.mkdir('public/app');
+    }
 };
