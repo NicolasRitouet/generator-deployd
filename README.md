@@ -24,6 +24,6 @@ dpd -d
 
 ## Todo
 - integrate Grunt to launch the server using [grunt-deployd](https://github.com/taras/grunt-deployd)
-- integrate angularjs
+- Improve angularjs integration (angular template more complete)
 - integrate bootstrap 3
 - create grunt tasks for live reloading, jshint, build, etc...
