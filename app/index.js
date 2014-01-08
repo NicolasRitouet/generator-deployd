@@ -42,7 +42,6 @@ DeploydGenerator.prototype.askFor = function askFor() {
 };
 
 DeploydGenerator.prototype.includeAngular = function includeAngular() {
-    console.log(this.angular);
     if (this.angular) {
         this.mkdir('public/app');
         this.template('app.js', 'public/app/app.js');
