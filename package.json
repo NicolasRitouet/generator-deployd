@@ -1,17 +1,16 @@
 {
   "name": "generator-deployd",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "A yeoman generator for Deployd",
   "keywords": [
-    "yeoman-generator"
+    "yeoman-generator",
+    "deployd"
   ],
   "homepage": "https://github.com/NicolasRitouet/generator-deployd",
-  "bugs": "https://github.com/NicolasRitouet/generator-deployd/issues",
-  "author": {
-    "name": "Nicolas Ritouet",
-    "email": "nicolas@ritouet.com",
-    "url": "https://github.com/NicolasRitouet"
+  "bugs": {
+    "url": "https://github.com/NicolasRitouet/generator-deployd/issues"
   },
+  "author": "Nicolas Ritouet <nicolas@ritouet.com> (https://github.com/NicolasRitouet)",
   "main": "app/index.js",
   "repository": {
     "type": "git",
@@ -33,9 +32,8 @@
     "node": ">=0.8.0",
     "npm": ">=1.2.10"
   },
-  "licenses": [
-    {
-      "type": "MIT"
-    }
-  ]
+  "directories": {
+    "test": "test"
+  },
+  "license": "MIT"
 }
