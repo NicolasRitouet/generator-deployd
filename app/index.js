@@ -29,25 +29,30 @@ DeploydGenerator.prototype.askFor = function askFor() {
   var prompts = [{
     type: 'confirm',
     name: 'angular',
-    message: 'Would you like to use angular?',
+    message: 'Would you like to use angularJS?',
     default: true
-  },
-  {
-    type: 'confirm',
-    name: 'bootstrap3',
-    message: 'Would you like to include Twitter Bootstrap 3?',
-    default: true
-  } ];
+  }];
 
   this.prompt(prompts, function (props) {
     this.angular = props.angular;
+    this.angularScript = '';
 
     cb();
   }.bind(this));
 };
 
+DeploydGenerator.prototype.includeAngular = function includeAngular() {
+    console.log(this.angular);
+    if (this.angular) {
+        this.mkdir('public/app');
+        this.template('app.js', 'public/app/app.js');
+        this.angularScript = "<script src=\"//ajax.googleapis.com/ajax/libs/angularjs/1.2.7/angular.min.js\"></script>";
+    }
+};
+
 DeploydGenerator.prototype.createFolders = function createFolders() {
   this.mkdir('public');
+  this.template('index.html', 'public/index.html');
   this.mkdir('data');
   this.mkdir('resources');
   this.mkdir('.dpd');
@@ -65,9 +70,3 @@ DeploydGenerator.prototype.projectfiles = function projectfiles() {
   this.copy('gitignore', '.gitignore');
 };
 
-DeploydGenerator.prototype.includeAngular = function includeAngular() {
-    console.log(this.angular);
-    if (this.angular) {
-        this.mkdir('public/app');
-    }
-};

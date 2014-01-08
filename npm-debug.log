@@ -1,0 +1,163 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   '--save-dev',
+1 verbose cli   'grunt-{ac,Add',
+1 verbose cli   'angularJS',
+1 verbose cli   'optional',
+1 verbose cli   'integration}' ]
+2 info using npm@1.3.14
+3 info using node@v0.10.22
+4 verbose readDependencies using package.json deps
+5 verbose cache add [ 'grunt-{ac,Add', null ]
+6 verbose cache add name=undefined spec="grunt-{ac,Add" args=["grunt-{ac,Add",null]
+7 verbose parsed url { protocol: null,
+7 verbose parsed url   slashes: null,
+7 verbose parsed url   auth: null,
+7 verbose parsed url   host: null,
+7 verbose parsed url   port: null,
+7 verbose parsed url   hostname: null,
+7 verbose parsed url   hash: null,
+7 verbose parsed url   search: null,
+7 verbose parsed url   query: null,
+7 verbose parsed url   pathname: 'grunt-{ac,Add',
+7 verbose parsed url   path: 'grunt-{ac,Add',
+7 verbose parsed url   href: 'grunt-{ac,Add' }
+8 verbose cache add [ 'angularJS', null ]
+9 verbose cache add name=undefined spec="angularJS" args=["angularJS",null]
+10 verbose parsed url { protocol: null,
+10 verbose parsed url   slashes: null,
+10 verbose parsed url   auth: null,
+10 verbose parsed url   host: null,
+10 verbose parsed url   port: null,
+10 verbose parsed url   hostname: null,
+10 verbose parsed url   hash: null,
+10 verbose parsed url   search: null,
+10 verbose parsed url   query: null,
+10 verbose parsed url   pathname: 'angularJS',
+10 verbose parsed url   path: 'angularJS',
+10 verbose parsed url   href: 'angularJS' }
+11 verbose cache add [ 'optional', null ]
+12 verbose cache add name=undefined spec="optional" args=["optional",null]
+13 verbose parsed url { protocol: null,
+13 verbose parsed url   slashes: null,
+13 verbose parsed url   auth: null,
+13 verbose parsed url   host: null,
+13 verbose parsed url   port: null,
+13 verbose parsed url   hostname: null,
+13 verbose parsed url   hash: null,
+13 verbose parsed url   search: null,
+13 verbose parsed url   query: null,
+13 verbose parsed url   pathname: 'optional',
+13 verbose parsed url   path: 'optional',
+13 verbose parsed url   href: 'optional' }
+14 verbose cache add [ 'integration}', null ]
+15 verbose cache add name=undefined spec="integration}" args=["integration}",null]
+16 verbose parsed url { protocol: null,
+16 verbose parsed url   slashes: null,
+16 verbose parsed url   auth: null,
+16 verbose parsed url   host: null,
+16 verbose parsed url   port: null,
+16 verbose parsed url   hostname: null,
+16 verbose parsed url   hash: null,
+16 verbose parsed url   search: null,
+16 verbose parsed url   query: null,
+16 verbose parsed url   pathname: 'integration}',
+16 verbose parsed url   path: 'integration}',
+16 verbose parsed url   href: 'integration}' }
+17 silly lockFile 527710be-grunt-ac-Add grunt-{ac,Add
+18 verbose lock grunt-{ac,Add /Users/nicolas.ritouet/.npm/527710be-grunt-ac-Add.lock
+19 silly lockFile 59f42719-angularJS angularJS
+20 verbose lock angularJS /Users/nicolas.ritouet/.npm/59f42719-angularJS.lock
+21 silly lockFile 48a7b888-optional optional
+22 verbose lock optional /Users/nicolas.ritouet/.npm/48a7b888-optional.lock
+23 silly lockFile adc6c808-integration integration}
+24 verbose lock integration} /Users/nicolas.ritouet/.npm/adc6c808-integration.lock
+25 silly lockFile 527710be-grunt-ac-Add grunt-{ac,Add
+26 silly lockFile 527710be-grunt-ac-Add grunt-{ac,Add
+27 silly lockFile 59f42719-angularJS angularJS
+28 silly lockFile 59f42719-angularJS angularJS
+29 silly lockFile 48a7b888-optional optional
+30 silly lockFile 48a7b888-optional optional
+31 silly lockFile adc6c808-integration integration}
+32 silly lockFile adc6c808-integration integration}
+33 verbose addNamed [ 'grunt-{ac,Add', '' ]
+34 verbose addNamed [ null, '*' ]
+35 silly lockFile 4fb9a21a-grunt-ac-Add grunt-{ac,Add@
+36 verbose lock grunt-{ac,Add@ /Users/nicolas.ritouet/.npm/4fb9a21a-grunt-ac-Add.lock
+37 verbose addNamed [ 'angularJS', '' ]
+38 verbose addNamed [ null, '*' ]
+39 silly lockFile 36045480-angularJS angularJS@
+40 verbose lock angularJS@ /Users/nicolas.ritouet/.npm/36045480-angularJS.lock
+41 verbose addNamed [ 'optional', '' ]
+42 verbose addNamed [ null, '*' ]
+43 silly lockFile 6b9aa3e7-optional optional@
+44 verbose lock optional@ /Users/nicolas.ritouet/.npm/6b9aa3e7-optional.lock
+45 verbose addNamed [ 'integration}', '' ]
+46 verbose addNamed [ null, '*' ]
+47 silly lockFile 8e267c49-integration integration}@
+48 verbose lock integration}@ /Users/nicolas.ritouet/.npm/8e267c49-integration.lock
+49 silly addNameRange { name: 'grunt-{ac,Add', range: '*', hasData: false }
+50 silly addNameRange { name: 'angularJS', range: '*', hasData: false }
+51 silly addNameRange { name: 'optional', range: '*', hasData: false }
+52 verbose url raw grunt-{ac,Add
+53 verbose url resolving [ 'https://registry.npmjs.org/', './grunt-%7Bac%2CAdd' ]
+54 verbose url resolved https://registry.npmjs.org/grunt-%7Bac%2CAdd
+55 info trying registry request attempt 1 at 23:02:43
+56 http GET https://registry.npmjs.org/grunt-%7Bac%2CAdd
+57 verbose url raw angularJS
+58 verbose url resolving [ 'https://registry.npmjs.org/', './angularJS' ]
+59 verbose url resolved https://registry.npmjs.org/angularJS
+60 info trying registry request attempt 1 at 23:02:43
+61 http GET https://registry.npmjs.org/angularJS
+62 silly addNameRange { name: 'integration}', range: '*', hasData: false }
+63 verbose url raw integration}
+64 verbose url resolving [ 'https://registry.npmjs.org/', './integration%7D' ]
+65 verbose url resolved https://registry.npmjs.org/integration%7D
+66 info trying registry request attempt 1 at 23:02:43
+67 http GET https://registry.npmjs.org/integration%7D
+68 verbose url raw optional
+69 verbose url resolving [ 'https://registry.npmjs.org/', './optional' ]
+70 verbose url resolved https://registry.npmjs.org/optional
+71 info trying registry request attempt 1 at 23:02:43
+72 verbose etag "6NKDUXFP2X3W3NKQICRZS16ID"
+73 http GET https://registry.npmjs.org/optional
+74 http 304 https://registry.npmjs.org/optional
+75 silly registry.get cb [ 304,
+75 silly registry.get   { date: 'Wed, 08 Jan 2014 22:02:43 GMT',
+75 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R15B03)',
+75 silly registry.get     connection: 'Keep-Alive',
+75 silly registry.get     'keep-alive': 'timeout=10, max=50',
+75 silly registry.get     etag: '"6NKDUXFP2X3W3NKQICRZS16ID"' } ]
+76 verbose etag optional from cache
+77 http 404 https://registry.npmjs.org/grunt-%7Bac%2CAdd
+78 silly registry.get cb [ 404,
+78 silly registry.get   { date: 'Wed, 08 Jan 2014 22:02:43 GMT',
+78 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R15B03)',
+78 silly registry.get     'content-type': 'application/json',
+78 silly registry.get     'cache-control': 'max-age=0',
+78 silly registry.get     'content-length': '52',
+78 silly registry.get     'accept-ranges': 'bytes',
+78 silly registry.get     via: '1.1 varnish',
+78 silly registry.get     age: '0',
+78 silly registry.get     'x-served-by': 'cache-fra1220-FRA',
+78 silly registry.get     'x-cache': 'MISS',
+78 silly registry.get     'x-cache-hits': '0',
+78 silly registry.get     'x-timer': 'S1389218563.342254162,VS0,VE163',
+78 silly registry.get     'keep-alive': 'timeout=10, max=50',
+78 silly registry.get     connection: 'Keep-Alive' } ]
+79 silly lockFile 4fb9a21a-grunt-ac-Add grunt-{ac,Add@
+80 silly lockFile 4fb9a21a-grunt-ac-Add grunt-{ac,Add@
+81 error 404 'grunt-%7Bac%2CAdd' is not in the npm registry.
+81 error 404 You should bug the author to publish it
+81 error 404
+81 error 404 Note that you can also install from a
+81 error 404 tarball, folder, or http url, or git url.
+82 error System Darwin 13.0.2
+83 error command "node" "/usr/local/bin/npm" "install" "--save-dev" "grunt-{ac,Add" "angularJS" "optional" "integration}"
+84 error cwd /Users/nicolas.ritouet/Development/workspace_private/generator-deployd
+85 error node -v v0.10.22
+86 error npm -v 1.3.14
+87 error code E404
+88 verbose exit [ 1, true ]
