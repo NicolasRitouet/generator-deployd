@@ -5,7 +5,9 @@ A generator for [Yeoman](http://yeoman.io).
 ## Notes about generator-deployd
 Early alpha phase, use at your own risk!
 
-Currently, this only works if you [install the Deployd binaries from the deployd website](http://deployd.com/download.html), but I assure you, it's worth it!
+Currently, it doesn't do more than "dpd create", but I plan to have more options with this generator (angularjs, bootstrap, Grunt tasks, etc...).
+
+Yet, this only works if you [install the Deployd binaries from the deployd website](http://deployd.com/download.html), but I assure you, it's worth it!
 
 ## Usage
 ### Generate the app
