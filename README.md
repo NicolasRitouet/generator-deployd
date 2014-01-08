@@ -1,6 +1,6 @@
 # generator-deployd [![Build Status](https://secure.travis-ci.org/NicolasRitouet/generator-deployd.png?branch=master)](https://travis-ci.org/NicolasRitouet/generator-deployd)
 
-A generator for [Yeoman](http://yeoman.io).
+A [Yeoman](http://yeoman.io) generator for [Deployd](http://deployd.com/).
 
 ## Notes about generator-deployd
 Early alpha phase, use at your own risk!
