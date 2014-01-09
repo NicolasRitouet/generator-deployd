@@ -64,7 +64,7 @@ DeploydGenerator.prototype.includeBootstrap = function includeBootstrap() {
     }
 };
 
-DeploydGenerator.prototype.createFolders = function createFolders() {
+DeploydGenerator.prototype.createApp = function createApp() {
   this.mkdir('public');
   this.template('_index.html', 'public/index.html');
   this.mkdir('data');
