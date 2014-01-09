@@ -19,15 +19,25 @@ describe('deployd generator', function () {
         }.bind(this));
     });
 
-    it('creates expected files', function (done) {
+    it('creates expected files with angular', function (done) {
         var expected = [
-            // add files you expect to exist here.
+
+            ['public/app/app.js',/tempApp/],
+            ['public/index.html', /angularjs/],
+            ['public/index.html', /bootstrap/],
+            ['public/index.html', /<title>Temp<\/title>/],
+            '.dpd/pids/mongod',
+            'app.dpd',
+            ['README.md',/# Temp/],
+            'package.json',
+            'bower.json',
             '.bowerrc',
             '.gitignore'
         ];
 
         helpers.mockPrompt(this.app, {
-            'angular': true
+            'angular': true,
+            'bootstrap3': true
         });
         this.app.options['skip-install'] = true;
         this.app.run({}, function () {

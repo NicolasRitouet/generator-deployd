@@ -26,32 +26,47 @@ DeploydGenerator.prototype.askFor = function askFor() {
   // have Yeoman greet the user.
   console.log(this.yeoman);
 
+this.angularScript = '';
+this.bootstrapInclude = '';
+
   var prompts = [{
     type: 'confirm',
     name: 'angular',
     message: 'Would you like to use angularJS?',
     default: true
+  }, {
+    type: 'confirm',
+    name: 'bootstrap3',
+    message: 'Would you like to use twitter bootstrap 3?',
+    default: true
   }];
 
   this.prompt(prompts, function (props) {
     this.angular = props.angular;
-    this.angularScript = '';
+    this.bootstrap3 = props.bootstrap3;
 
     cb();
   }.bind(this));
+
 };
 
 DeploydGenerator.prototype.includeAngular = function includeAngular() {
     if (this.angular) {
         this.mkdir('public/app');
-        this.template('app.js', 'public/app/app.js');
-        this.angularScript = "<script src=\"//ajax.googleapis.com/ajax/libs/angularjs/1.2.7/angular.min.js\"></script>";
+        this.template('_app.js', 'public/app/app.js');
+        this.angularScript = "\n<script src=\"//ajax.googleapis.com/ajax/libs/angularjs/1.2.7/angular.min.js\"></script>";
+    }
+};
+
+DeploydGenerator.prototype.includeBootstrap = function includeBootstrap() {
+    if (this.bootstrap3) {
+        this.bootstrapInclude = "\n<link href=\"//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css\" rel=\"stylesheet\">";
     }
 };
 
 DeploydGenerator.prototype.createFolders = function createFolders() {
   this.mkdir('public');
-  this.template('index.html', 'public/index.html');
+  this.template('_index.html', 'public/index.html');
   this.mkdir('data');
   this.mkdir('resources');
   this.mkdir('.dpd');

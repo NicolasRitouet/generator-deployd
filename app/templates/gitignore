@@ -2,6 +2,9 @@
 node_modules
 npm-debug.log
 
+# bower
+public/components
+
 # Deployd
 data/
 .dpd
