@@ -1,4 +1,4 @@
-# generator-deployd [![Build Status](https://secure.travis-ci.org/NicolasRitouet/generator-deployd.png?branch=master)](https://travis-ci.org/NicolasRitouet/generator-deployd)
+# generator-deployd [![Build Status](https://secure.travis-ci.org/NicolasRitouet/generator-deployd.png?branch=master)](https://travis-ci.org/NicolasRitouet/generator-deployd) [![NPM](https://nodei.co/npm/generator-deployd.png?compact=true)](https://nodei.co/npm/generator-deployd/)
 
 A [Yeoman](http://yeoman.io) generator for [Deployd](http://deployd.com/).
 
