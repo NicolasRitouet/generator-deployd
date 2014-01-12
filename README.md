@@ -2,15 +2,11 @@
 
 A [Yeoman](http://yeoman.io) generator for [Deployd](http://deployd.com/).
 
-## Notes about generator-deployd
-Early alpha phase, use at your own risk!
+## Early alpha phase, use at your own risk!
 
-Currently, it doesn't do more than "dpd create", but I plan to have more options with this generator (angularjs, bootstrap, Grunt tasks, etc...).
-
-Yet, this only works if you [install the Deployd binaries from the deployd website](http://deployd.com/download.html), but I assure you, it's worth it!
 
 ## Usage
-### Generate the app
+### Generate your app
 ```
 $ npm install -g yo generator-deployd
 $ mkdir name_of_your_app && cd $_
@@ -24,12 +20,16 @@ $ dpd -d
 
 ### Start the app using Grunt
 #### Requirements
- - MongoDB (set the host, port, dbname and credentials in Gruntfile.js)
+ - MongoDB (set the host, port, dbname and credentials in Gruntfile.js)  
+
 ```
 $ grunt server
 ```
+This will launch you deployd API, open the start page and watch the files.
 
 ## Todo
-- integrate Grunt to launch the server using [grunt-deployd](https://github.com/taras/grunt-deployd)
+- Grunt: complete integration of grunt-deployd (start of deployd simultaneously with a server-side app)
+- Grunt: real livereloading
+- Grunt: build task (uglify, concat, jshint)
+- Grunt: test task
 - Improve angularjs integration (angular template more complete)
-- create grunt tasks for live reloading, jshint, build, etc...
