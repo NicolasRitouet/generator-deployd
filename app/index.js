@@ -77,7 +77,7 @@ DeploydGenerator.prototype.createApp = function createApp() {
 
 DeploydGenerator.prototype.projectfiles = function projectfiles() {
   this.template('_README.md', 'README.md');
-  //this.template('_Gruntfile.js', 'Gruntfile.js');
+  this.template('_Gruntfile.js', 'Gruntfile.js');
   this.template('_package.json', 'package.json');
   this.copy('_bower.json', 'bower.json');
   this.copy('bowerrc', '.bowerrc');

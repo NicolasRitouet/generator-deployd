@@ -1,13 +1,21 @@
 {
-  "name": "<%= _.slugify(appname) %>",
-  "version": "0.0.1",
-  "dependencies": {
-    "deployd": "~0.6.10"
+    "name": "<%= _.slugify(appname) %>",
+    "name": "<%= _.slugify(appname) %>",
+    "name": "<%= _.slugify(appname) %>",
+    "version": "0.0.1",
+    "dependencies": {
+        "deployd": "~0.6.10"
     },
-  "engines": {
-    "node": ">=0.8.0"
-  },
-  "scripts": {
-    "start": "node node_modules/deployd/bin/dpd"
-  }
+    "devDependencies": {
+        "grunt": "~0.4.2",
+        "grunt-deployd": "~0.1.2",
+        "grunt-contrib-watch": "~0.4.0",
+        "grunt-contrib-jshint": "~0.4.0"
+    },
+    "engines": {
+        "node": "~0.8.0"
+    },
+    "scripts": {
+        "start": "node node_modules/deployd/bin/dpd"
+    }
 }
