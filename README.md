@@ -2,8 +2,9 @@
 
 A [Yeoman](http://yeoman.io) generator for [Deployd](http://deployd.com/).
 
-## Early alpha phase, use at your own risk!
+__Early alpha phase, use at your own risk!__
 
+Don't hesitate to [fill an issue](https://github.com/NicolasRitouet/generator-deployd/issues/new) if you find a bug or need a feature. Pull requests also gladly accepted!
 
 ## Usage
 ### Generate your app
