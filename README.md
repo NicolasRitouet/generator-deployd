@@ -17,9 +17,16 @@ $ mkdir name_of_your_app && cd $_
 $ yo deployd
 ```
 
-### Start the app
+### Start the app using Deployd binaries
 ```
 $ dpd -d
+```
+
+### Start the app using Grunt
+#### Requirements
+ - MongoDB (set the host, port, dbname and credentials in Gruntfile.js)
+```
+$ grunt server
 ```
 
 ## Todo

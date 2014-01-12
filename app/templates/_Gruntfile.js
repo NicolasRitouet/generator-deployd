@@ -56,13 +56,22 @@ module.exports = function(grunt) {
                     livereload: true
                 }
             }
-        }
+        },
+         open: {
+            dev: {
+                path: 'http://localhost:<%%= deployd.dev.options.port%>'
+            },
+            prod: {
+                path: 'http://localhost:<%%= deployd.prod.options.port%>'
+            }
+         }
     });
 
     // Import of plugins
 //    grunt.loadNpmTasks('grunt-contrib-uglify');
     grunt.loadNpmTasks('grunt-contrib-jshint');
     grunt.loadNpmTasks('grunt-contrib-watch');
+    grunt.loadNpmTasks('grunt-open');
 //    grunt.loadNpmTasks('grunt-contrib-concat');
     grunt.loadNpmTasks('grunt-deployd');
 
@@ -70,6 +79,7 @@ module.exports = function(grunt) {
     grunt.registerTask('server', function(target) {
         grunt.task.run( [
             'deployd:dev',
+            'open:dev',
             'watch'
         ] );
     });
