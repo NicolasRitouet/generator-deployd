@@ -1,3 +1,12 @@
-node_modules/
-temp/
+# Nodejs
+node_modules
 npm-debug.log
+temp/
+
+# Intellij
+.idea/
+*.iml
+*.iws
+
+# Mac
+.DS_Store
