@@ -1,0 +1,31 @@
+
+<% if (sample) { %>
+<div class="header">
+  <ul class="nav nav-pills pull-right">
+    <li class="active"><a ng-href="#">Home</a></li>
+    <li><a ng-href="#">About</a></li>
+    <li><a ng-href="#">Contact</a></li>
+  </ul>
+  <h3 class="text-muted"><%= appname %></h3>
+</div>
+
+<div class="jumbotron">
+  <h1>'Allo, 'Allo!</h1>
+  <p class="lead">
+    <img src="http://yeoman.io/media/bullet-yo.gif" alt="I'm Yeoman"><br>
+    This is an example of a generated project by <a href="https://github.com/NicolasRitouet/generator-deployd" target="_blank">generator-deployd</a>.
+  </p>
+  <p><a class="btn btn-lg btn-success" ng-href="#">Splendid!</a></p>
+</div>
+
+<div class="row marketing" ng-repeat="thing in awesomeThings">
+  <h4><a href ng-href="{{thing.link}}">{{thing.name}}</a></h4>
+  <p>
+    {{thing.description}}
+  </p>
+</div>
+
+<div class="footer">
+  <p><span class="glyphicon glyphicon-fire"></span> <a href="http://github.com/NicolasRitouet" target="_blank">Nicolas Ritouet</a></p>
+</div>
+<% } %>

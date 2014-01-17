@@ -23,6 +23,8 @@ describe('deployd generator', function () {
         var expected = [
 
             ['public/app/app.js',/tempApp/],
+            ['public/app/controller.js', /awesomeThings/],
+            ['public/app/views/main.html', /generated/],
             ['public/index.html', /angularjs/],
             ['public/index.html', /bootstrap/],
             ['public/index.html', /<title>Temp<\/title>/],
@@ -32,12 +34,15 @@ describe('deployd generator', function () {
             'package.json',
             'bower.json',
             '.bowerrc',
-            '.gitignore'
+            '.gitignore',
+            'resources/things/config.json'
+
         ];
 
         helpers.mockPrompt(this.app, {
             'angular': true,
-            'bootstrap3': true
+            'bootstrap': true,
+            'sample': true
         });
         this.app.options['skip-install'] = true;
         this.app.run({}, function () {

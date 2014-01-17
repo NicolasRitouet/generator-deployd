@@ -3,13 +3,31 @@
 <head>
     <title><%= _.humanize(appname) %></title>
     <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
-    <script type="text/javascript" src="dpd.js"></script><%= angularScript %>
-    <%= bootstrapInclude %>
+    <script type="text/javascript" src="dpd.js"></script>
+    <% if (angular) { %>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.9/angular.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.9/angular-route.min.js"></script>
+    <script src="app/app.js"></script>
+    <script src="app/controller.js"></script>
+    <% } %>
+
+    <link href="styles/main.css" rel="stylesheet">
+    <% if (bootstrap) { %>
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet">
+    <% } %>
+
 </head>
-<body>
-    <h1>Welcome to Deployd!</h1>
-    <p>You've just created a Deployd app. You can add front-end files in the <code>public</code> folder.</p>
-    <p>You can access <a href="/dashboard">the dashboard</a> to add collections.</p>
-    <p>If you're new to Deployd, have a look at the <a href="http://docs.deployd.com/docs/getting-started/what-is-deployd.md">Getting Started Guide</a> or <a href="http://docs.deployd.com/docs/getting-started/your-first-api.md">Hello World Tutorial<a>.</p>
+<body<% if (angular) { %>  ng-app="<%= scriptAppName %>"<% } %>>
+
+    <% if (angular) { %>
+        <div class="container" ng-view></div>
+    <% } else { %>
+
+        <h1>Welcome to Deployd!</h1>
+        <p>You've just created a Deployd app. You can add front-end files in the <code>public</code> folder.</p>
+        <p>You can access <a href="/dashboard">the dashboard</a> to add collections.</p>
+        <p>If you're new to Deployd, have a look at the <a href="http://docs.deployd.com/docs/getting-started/what-is-deployd.md">Getting Started Guide</a> or <a href="http://docs.deployd.com/docs/getting-started/your-first-api.md">Hello World Tutorial<a>.</p>
+
+    <% } %>
 </body>
 </html>
