@@ -12,12 +12,12 @@ or
 Launch deployd
 
 ```bash
-grunt server
+$ grunt server
 ```
 
 ### Development with deployd binaries
 ```bash
-dpd -o
+$ dpd -o
 ```
 
 Then, go to [http://localhost:2403/dashboard](http://localhost:2403/dashboard) to add a collection or two ... et voilà!
