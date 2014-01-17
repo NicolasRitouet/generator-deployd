@@ -1,5 +1,6 @@
 # generator-deployd [![Build Status](https://secure.travis-ci.org/NicolasRitouet/generator-deployd.png?branch=master)](https://travis-ci.org/NicolasRitouet/generator-deployd) [![NPM](https://nodei.co/npm/generator-deployd.png?compact=true)](https://nodei.co/npm/generator-deployd/)
 
+## Description
 A [Yeoman](http://yeoman.io) generator for [Deployd](http://deployd.com/).
 
 __Early alpha phase, use at your own risk!__
@@ -27,6 +28,10 @@ $ dpd -d
 $ grunt server
 ```
 This will launch you deployd API, open the start page and watch the files.
+
+## Changelog
+- 0.0.5
+	- Add (optional) sample angular/deployd app
 
 ## Todo
 - Grunt: complete integration of grunt-deployd (start of deployd simultaneously with a server-side app)
