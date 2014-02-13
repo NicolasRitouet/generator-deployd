@@ -87,6 +87,13 @@ DeploydGenerator.prototype.createSample = function createSample() {
 DeploydGenerator.prototype.projectfiles = function projectfiles() {
   this.template('_README.md', 'README.md');
   this.template('_Gruntfile.js', 'Gruntfile.js');
+  this.mkdir('grunt');
+  this.template('grunt/_open.js', 'grunt/open.js');
+  this.template('grunt/_watch.js', 'grunt/watch.js');
+  this.template('grunt/deployd.js', 'grunt/deployd.js');
+  this.template('grunt/concat.js', 'grunt/concat.js');
+  this.template('grunt/uglify.js', 'grunt/uglify.js');
+  this.template('grunt/aliases.yaml', 'grunt/aliases.yaml');
   this.template('_package.json', 'package.json');
   this.copy('_bower.json', 'bower.json');
   this.copy('bowerrc', '.bowerrc');

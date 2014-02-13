@@ -9,7 +9,12 @@
         "grunt-deployd": "~0.1.2",
         "grunt-contrib-watch": "~0.4.0",
         "grunt-contrib-jshint": "~0.4.0",
-        "grunt-open": "~0.2.2"
+        "grunt-open": "~0.2.2",
+        "load-grunt-config": "~0.7.0",
+        "grunt-newer": "~0.6.1",
+        "grunt-contrib-concat": "~0.3.0",
+        "grunt-contrib-uglify": "~0.3.2",
+        "time-grunt": "~0.2.9"
     },
     "engines": {
         "node": "~0.8.0"

@@ -1,0 +1,6 @@
+default:
+- 'concat'
+- 'uglify'
+- 'deployd:dev'
+- 'open:dev'
+- 'watch'
