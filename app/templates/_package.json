@@ -2,14 +2,14 @@
     "name": "<%= _.slugify(appname) %>",
     "version": "0.0.1",
     "dependencies": {
-        "deployd": "~0.6.10"
+        "deployd": "*"
     },
     "devDependencies": {
-        "grunt": "~0.4.2",
-        "grunt-deployd": "~0.1.2",
-        "grunt-contrib-watch": "~0.4.0",
-        "grunt-contrib-jshint": "~0.4.0",
-        "grunt-open": "~0.2.2"
+        "grunt": "*",
+        "grunt-deployd": "*",
+        "grunt-contrib-watch": "*",
+        "grunt-contrib-jshint": "*",
+        "grunt-open": "*"
     },
     "engines": {
         "node": "~0.8.0"
