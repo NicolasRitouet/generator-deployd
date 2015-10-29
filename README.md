@@ -30,7 +30,7 @@ $ grunt server
 This will launch you deployd API, open the start page and watch the files.
 
 ## Changelog
-- [0.0.6](https://github.com/NicolasRitouet/generator-deployd/releases/tag/0.0.6)
+- [0.0.6](https://github.com/NicolasRitouet/generator-deployd/releases/tag/v0.0.6)
 	- Update dependencies and improve tests
 - [0.0.5](https://github.com/NicolasRitouet/generator-deployd/releases/tag/0.0.5)
   - Add (optional) sample angular/deployd app
