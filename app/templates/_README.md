@@ -1,4 +1,4 @@
-# <%= _.humanize(appname) %>
+# <%= appname %>
 
 ## Requirements
 - a mongoDB server (set the host, port, dbname and credentials in Gruntfile.js)

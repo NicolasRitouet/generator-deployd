@@ -1,7 +1,12 @@
 'use strict';
-var util = require('util');
-var path = require('path');
-var yeoman = require('yeoman-generator');
+var util = require('util'),
+    path = require('path'),
+    yeoman = require('yeoman-generator'),
+    _ = require('underscore.string'),
+    yosay = require('yosay'),
+    chalk = require('chalk'),
+    mkdir = require('mkdirp'),
+    htmlWiring = require('html-wiring');
 
 
 var DeploydGenerator = module.exports = function DeploydGenerator(args, options, config) {
@@ -9,13 +14,13 @@ var DeploydGenerator = module.exports = function DeploydGenerator(args, options,
 
   this.argument('appname', { type: String, required: false });
   this.appname = this.appname || path.basename(process.cwd());
-  this.appname = this._.camelize(this._.slugify(this._.humanize(this.appname)));
+  this.appname = _.camelize(_.slugify(_.humanize(this.appname)));
 
   this.on('end', function () {
     this.installDependencies({ skipInstall: options['skip-install'] });
   });
 
-  this.pkg = JSON.parse(this.readFileAsString(path.join(__dirname, '../package.json')));
+  this.pkg = JSON.parse(htmlWiring.readFileAsString(path.join(__dirname, '../package.json')));
 };
 
 util.inherits(DeploydGenerator, yeoman.generators.Base);
@@ -24,7 +29,9 @@ DeploydGenerator.prototype.askFor = function askFor() {
   var cb = this.async();
 
   // have Yeoman greet the user.
-  console.log(this.yeoman);
+  this.log(yosay(
+			'Welcome to the ' + chalk.yellow('Deployd') + ' generator!'
+		));
 
   var prompts = [{
     type: 'confirm',
@@ -58,8 +65,8 @@ DeploydGenerator.prototype.askFor = function askFor() {
 
 DeploydGenerator.prototype.includeAngular = function includeAngular() {
     if (this.angular) {
-        this.scriptAppName = this._.slugify(this.appname) + 'App';
-        this.mkdir('public/app');
+        this.scriptAppName = _.slugify(this.appname) + 'App';
+          mkdir('public/app');
         this.template('app/_app.js', 'public/app/app.js');
         this.template('app/_controller.js', 'public/app/controller.js');
         this.template('app/views/_main.html', 'public/app/views/main.html');
@@ -67,13 +74,13 @@ DeploydGenerator.prototype.includeAngular = function includeAngular() {
 };
 
 DeploydGenerator.prototype.createApp = function createApp() {
-  this.mkdir('public');
+  mkdir('public');
   this.template('_index.html', 'public/index.html');
   this.template('styles/_main.css', 'public/styles/main.css');
-  this.mkdir('data');
-  this.mkdir('resources');
-  this.mkdir('.dpd');
-  this.mkdir('.dpd/pids');
+  mkdir('data');
+  mkdir('resources');
+  mkdir('.dpd');
+  mkdir('.dpd/pids');
   this.copy('mongod', '.dpd/pids/mongod');
   this.copy('app.dpd', 'app.dpd');
 };
@@ -92,4 +99,3 @@ DeploydGenerator.prototype.projectfiles = function projectfiles() {
   this.copy('bowerrc', '.bowerrc');
   this.copy('gitignore', '.gitignore');
 };
-
