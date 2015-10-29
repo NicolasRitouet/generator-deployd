@@ -30,8 +30,10 @@ $ grunt server
 This will launch you deployd API, open the start page and watch the files.
 
 ## Changelog
+- [0.0.6](https://github.com/NicolasRitouet/generator-deployd/releases/tag/0.0.6)
+	- Update dependencies and improve tests
 - [0.0.5](https://github.com/NicolasRitouet/generator-deployd/releases/tag/0.0.5)
-	- Add (optional) sample angular/deployd app
+  - Add (optional) sample angular/deployd app
 
 ## Todo
 - Grunt: complete integration of grunt-deployd (start of deployd simultaneously with a server-side app)

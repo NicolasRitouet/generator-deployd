@@ -1,6 +1,6 @@
 {
   "name": "generator-deployd",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "A yeoman generator for Deployd",
   "keywords": [
     "yeoman-generator",
